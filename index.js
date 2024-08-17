@@ -11,7 +11,7 @@ const walkDog = () => {
       if (dogWalked) {
         resolve("you walk the dog");
       } else {
-        reject("you didn't walked the dog.")
+        reject("you didn't walked the dog.");
       }
     }, 1500);
   });
@@ -46,15 +46,15 @@ const takeOutTrash = () => {
 walkDog()
   .then(value => {
     console.log(value)
-    return cleanTheKitchen()
+    return cleanTheKitchen();
   })
   .then(value => {
     console.log(value)
-    return takeOutTrash()
+    return takeOutTrash();
   })
   .then(value => {
     console.log(value);
-    console.log("you finished all the chores")
+    console.log("you finished all the chores");
   })
   .catch(err => console.log(err));
 
